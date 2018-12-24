@@ -18,4 +18,6 @@ myFile.close()
 # Read the file
 myFile = open("scores.txt", "r")
 print("Reading..." + myFile.read(10))
+myFile.close()
+myFile = open("scores.txt", "r")
 print("Reading again" + myFile.read(10))
