@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 """ Weather Statistics by Barron Stone for Code Clinic: Python """
 import re
 from csv import DictReader
@@ -11,7 +11,7 @@ import matplotlib
 from matplotlib.dates import date2num, num2date
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import (
-    FigureCanvasTkAgg, NavigationToolbar2TkAgg)
+    FigureCanvasTkAgg, NavigationToolbar2Tk)
 
 class WeatherStatistics:
 
@@ -20,7 +20,7 @@ class WeatherStatistics:
         datetime_list, barpress_list = [], []
         datetime_re = re.compile(r'[\d]{2,4}') # regex to get datetime info
         for year in range(2012, 2016):
-            fname = '..\\resources\\Environmental_Data_Deep_Moor_{0}.txt'.format(year)
+            fname = "/Users/sedsaid/Documents/Lessons/python_learning_path/Code_Clinic_Python/Exercise_Files/Ch01/solution/Environmental_Data_Deep_Moor_{0}.txt".format(year)
             print('Loading {0}'.format(fname))
             for row in DictReader(open(fname,'r'),delimiter='\t'):
                 barpress_list.append(float(row['Barometric_Press']))
@@ -41,7 +41,7 @@ class WeatherStatistics:
         self.canvas = FigureCanvasTkAgg(f, master)
         self.canvas.draw()
         toolbar_frame = ttk.Frame(master) # needed to put navbar above plot
-        toolbar = NavigationToolbar2TkAgg(self.canvas, toolbar_frame)
+        toolbar = NavigationToolbar2Tk(self.canvas, toolbar_frame)
         toolbar.update()
         toolbar_frame.pack(side=TOP, fill=X, expand=0)
         self.canvas._tkcanvas.pack(fill=BOTH, expand=1)

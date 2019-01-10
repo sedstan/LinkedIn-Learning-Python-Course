@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 """ Geolocation via IP Lookup by Barron Stone for Code Clinic: Python """
 from urllib import request
 import json

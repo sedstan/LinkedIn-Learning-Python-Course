@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 """ Instrument by Barron Stone for Code Clinic: Python """
 from tkinter import *
 from tkinter import ttk
@@ -6,7 +6,7 @@ import numpy as np
 import simpleaudio as sa
 
 SAMPLE_RATE = 44100 # Hz
-DURATION = 60 # max seconds to hold any tone
+DURATION = 2 # max seconds to hold any tone
 TIME_VECT = np.linspace(0, DURATION, DURATION * SAMPLE_RATE, False) # time vector for audio
 
 class Instrument:

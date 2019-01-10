@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 """ Facial Detection by Barron Stone for Code Clinic: Python """
 import os
 import cv2

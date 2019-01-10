@@ -1,11 +1,11 @@
-#!/usr/bin/python3
+
 """ Geolocation via Google Maps API by Barron Stone for Code Clinic: Python """
 import re
 import subprocess
 import requests
 
 API_URL = 'https://www.googleapis.com/geolocation/v1/geolocate?key='
-API_KEY = 'AIzaSyBbzftXRb-82QIOH0T3_FUMif402VdVo-c ' # replace with your own Google Maps API key
+API_KEY = 'AIzaSyDgC-_EJEtOlt-0LBe5w6CCtGay4veDKpk'  # replace with your own Google Maps API key
 
 # add wifi info to request if available
 payload = {'considerIp': 'true'}
@@ -15,8 +15,8 @@ try:
     signals = re.findall(r'([\d]+)(%)', cmdout)
     channels = re.findall(r'(Channel[\W]+: )([\d]+)', cmdout)
     if not (len(macs) == len(signals) == len(channels)):
-        raise
-except:
+        raise Exception
+except Exception:
     print('Could not retrieve WiFi Access Points...')
 else:
     print('Using {0} WiFi Access Point{1}...'.format(len(macs), 's' if (len(macs) > 1) else ''))
