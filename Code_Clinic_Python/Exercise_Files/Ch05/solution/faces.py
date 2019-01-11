@@ -1,13 +1,13 @@
-
+#!/usr/local/bin/env python3
 """ Facial Detection by Barron Stone for Code Clinic: Python """
 import os
-import cv2
-import imageio
 import json
 import tkinter as tk
 from tkinter import filedialog
+import cv2
+import imageio
 
-def detectFaces(img_path, display=False):
+def detect_faces(img_path, display=False):
     try:
         if img_path.lower().endswith('.png'):
             color_img = cv2.imread(img_path)
@@ -58,7 +58,7 @@ def main():
                                                        ('GIF','*.gif'),
                                                        ('PNG','*.png'),
                                                        ('all files','*.*')))
-    output = detectFaces(img_path, display=True)
+    output = detect_faces(img_path, display=True)
     json_path = ('.').join(img_path.split('.')[:-1]) + '.json'
     x = input('Save result to {}? [y/n]: '.format(os.path.basename(json_path)))
     if x.lower() in ('y','ye','yes'):
