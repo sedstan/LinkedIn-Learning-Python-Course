@@ -6,5 +6,6 @@
     79
   ],
   "editor.wordWrapColumn": 79,
-  "editor.wrappingIndent": "indent"
+  "editor.wrappingIndent": "indent",
+  "python.formatting.provider": "black"
 }
