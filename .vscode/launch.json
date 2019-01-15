@@ -12,7 +12,8 @@
       "program": "${file}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "openOnSessionStart",
-      "debugStdLib": true
+      "debugStdLib": true,
+      "pythonPath": "${config:python.pythonPath}"
     }
   ]
 }
