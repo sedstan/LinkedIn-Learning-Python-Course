@@ -2,7 +2,7 @@
 
 import time
 
-hungry = True; # I need a pizza!
+hungry = True # I need a pizza!
 
 while(hungry):
 

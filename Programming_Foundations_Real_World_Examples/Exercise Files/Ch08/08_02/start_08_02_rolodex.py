@@ -10,3 +10,16 @@ rolodex = {'Aaron'  : 5556069,
            'Mom'    : 5552603,
            'Olivia' : 5556397,
            'Verne'  : 5555309}
+
+print(rolodex)
+rolodex['Amanda'] = 5559754
+print(rolodex['Amanda'])
+print(rolodex)
+print(rolodex['David'])
+rolodex['David'] = 5550902
+print(rolodex['David'])
+rolodex['David'] = (5558331, 5550902)
+print(rolodex['David'])
+rolodex['David'] = 5558331
+rolodex['David(Amanda)'] = 5550902
+print(rolodex)
