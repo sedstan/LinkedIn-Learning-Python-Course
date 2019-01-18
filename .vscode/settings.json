@@ -1,11 +1,11 @@
 {
-  "python.linting.pylintEnabled": true,
   "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3",
   "editor.tabSize": 4,
-  "editor.rulers": [
-    79
-  ],
+  "editor.detectIndentation": true,
+  "editor.rulers": [80],
   "editor.wordWrapColumn": 79,
   "editor.wrappingIndent": "indent",
-  "python.formatting.provider": "autopep8"
+  "python.formatting.provider": "autopep8",
+  "python.linting.enabled": true,
+  "python.linting.pep8Enabled": true
 }
