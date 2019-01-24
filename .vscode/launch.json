@@ -6,11 +6,11 @@
   "configurations": [
     
     {
-      "name": "Python: Terminal",
+      "name": "Python",
       "type": "python",
       "request": "launch",
       "program": "${file}",
-      "console": "integratedTerminal",
+      "console": "none",
       "internalConsoleOptions": "openOnSessionStart",
       "debugStdLib": true,
       "pythonPath": "${config:python.pythonPath}"

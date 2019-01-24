@@ -2,6 +2,7 @@
 # Example file for working with classes
 #
 
+
 class myClass():
     def method1(self):
         print("myClass medthod1")
@@ -12,8 +13,8 @@ class myClass():
 
 class anotherClass(myClass):
     def method1(self):
-      myClass.method1(self)
-      print("anotherClass medthod1")
+        myClass.method1(self)
+        print("anotherClass medthod1")
 
     def method2(self, someString):
         print("anotherClass method2")
